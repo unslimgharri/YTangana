@@ -13,7 +13,5 @@ VERSION 1.1: Added GUI and progress bar.
 
 <h2>IF BUILT FROM SOURCE:</h2>
 
-# modules required: selenium, bs4, requests, tkinter
-# drivers: chromedriver (Can be downloaded from: https://chromedriver.chromium.org/downloads )
-
+* Modules required to build: selenium, bs4, requests, tkinter
 
