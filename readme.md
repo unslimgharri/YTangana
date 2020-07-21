@@ -1,7 +1,8 @@
 <h1># YTangana</h1>
+VERSION 1.1: Added GUI and progress bar.
+
 A tool that downloads the audio of ANY youtube video - ignores restrictions
 
-VERSION 1.1: Added GUI and progress bar. 
 
 <h2>Instructions:</h2>
 
