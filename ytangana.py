@@ -1,4 +1,3 @@
-import sys, getopt
 import json
 import requests
 import re
@@ -8,9 +7,6 @@ import time, threading
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-#from tqdm.utils import CallbackIOWrapper
-
-
 
 def gettitle(urlseed):
     mainContent = requests.get(urlseed)
@@ -26,7 +22,6 @@ def wgetfile(window, url2, title):
     r = requests.get(str(url2[0]), stream=True)
     filesize = int(r.headers.get('content-length', 0 ))
     block_size = 256
-    cache=0
     #t = tqdm(total=filesize, unit='iB', unit_scale=True)
     window.progress_bar = Progressbar(mode='determinate', maximum=filesize)
     window.progress_bar.grid(row=3, column=0, sticky='we', padx=10, pady=10)
@@ -104,6 +99,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-#downloadlink = generatedownload(urlseed)
-#title = gettitle(urlseed)
-#savefile(downloadlink, title)
